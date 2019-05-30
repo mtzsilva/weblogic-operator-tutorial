@@ -13,7 +13,7 @@ import="java.net.InetAddress"%>
 <!DOCTYPE html>
 <html>
 <body>
-	<h1>WebLogic Operator Demo App - MBean properties:</h1><br>
+	<h1><font color="green">WebLogic Operator Demo App - MBean properties:</font></h1><br>
 	<%
 		String jdbcDataSourceName = request.getParameter("dsname");
 		StringBuffer message = new StringBuffer();
@@ -62,7 +62,7 @@ import="java.net.InetAddress"%>
 				message.append("</p>");
 			} catch (Exception e) {
 				e.printStackTrace();
-				message.append("<b>Error:</b> " + e.getClass().getName() + " - " + e.getLocalizedMessage());
+				message.append("<b>Error:</b> " + e.getClass().getName() + " -123- " + e.getLocalizedMessage());
 			}
 		}
 	%>
